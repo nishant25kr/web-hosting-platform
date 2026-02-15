@@ -41,15 +41,15 @@ export function getAllFiles(folderPath) {
 
 }
 
-export async function uploadeOnS3(fileName, localFilePath) {
-    const fileContent = fs.readFileSync(localFilePath)
+// export async function uploadeOnS3(fileName, localFilePath) {
+//     const fileContent = fs.readFileSync(localFilePath)
 
-    const res = await s3.upload({
-        Body: fileContent,
-        Bucket: "vercel",
-        Key: fileName,
-    }).promise();
-    console.log(response);
+//     const res = await s3.upload({
+//         Body: fileContent,
+//         Bucket: "vercel",
+//         Key: fileName,
+//     }).promise();
+//     console.log(response);
 
-}
+// }
 
